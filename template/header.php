@@ -86,7 +86,7 @@ $name = $_SESSION['login_user'] ?? "Login";
             ?>
           </li>
           <li class="nav-item">
-             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav-link">
+             <a href="./admin.php" class="nav-link">
               Admin
              </a>
           </li>
