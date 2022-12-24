@@ -14,8 +14,9 @@ if(isset($_GET['id'])){
     //O^v#6#cTqE2NmBFzvsae
 }
 ?>
+<div class="bg-light">
 
-   <div class="container d-flex justify-content-center py-5 mt-5">
+   <div class="container d-flex  justify-content-center py-5 mt-5">
     <div class="">
         <h1><u><?php echo $ssname ?></u></h1>
         <h3>Available Foods</h3>
@@ -29,19 +30,18 @@ if(isset($_GET['id'])){
             ?>
 <div class="card bg-dark " style="width: 18rem;">
   <img src="./img/<?php echo $data['food_img']?>" class="card-img-top " alt="...">
-  <div class="card-body">
-    <h2 class="card-title text-center"><?php echo $data['fname']?></h2>
-  </div>
 </div>      
  <?php }  ?> 
-        </div>
+        
    </div>
-
+   </div>
+   
 
 
 
    <div class="container text-center">
    <h2 class="py-5 ">Reserve Table</h2>
+
    <form action="book.php" method="post">
     <label for="">Date</label>
     <input type="date" name="date" id="">
@@ -64,6 +64,8 @@ if(isset($_GET['id'])){
    <script>var nav = document.querySelector('nav');
        nav.classList.add('bg-dark');
    </script>
+
+</div>   
 </body>
 </html>
 
