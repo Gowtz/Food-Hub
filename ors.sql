@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 24, 2022 at 11:57 AM
+-- Generation Time: Dec 25, 2022 at 09:03 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -60,8 +60,8 @@ CREATE TABLE `food` (
 --
 
 INSERT INTO `food` (`fid`, `fname`, `sid`, `food_img`) VALUES
-(1, '', 1, '2.jpeg'),
-(3, '', 1, 'download.jpeg');
+(1, '', 1, 'food1.jpg'),
+(3, '', 1, 'food2.jpg');
 
 -- --------------------------------------------------------
 
@@ -81,7 +81,7 @@ CREATE TABLE `store` (
 --
 
 INSERT INTO `store` (`sid`, `sname`, `address`, `img`) VALUES
-(1, 'Chai Kings', 'MVJCE', 'ezgif-1-93097cdd87.jpg');
+(1, 'Chai Kings', 'MVJCE', 'res1.jpg');
 
 -- --------------------------------------------------------
 
@@ -203,6 +203,16 @@ ALTER TABLE `user`
 --
 ALTER TABLE `cust`
   MODIFY `cid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `trans`
+--
+ALTER TABLE `trans`
+  ADD CONSTRAINT `trans_ibfk_1` FOREIGN KEY (`tid`) REFERENCES `tabl` (`tid`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
