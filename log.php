@@ -32,6 +32,9 @@ if (isset($_POST["usrname"],$_POST["pass"]))
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 <style>
+body {
+    background-color: #1E1E1E ;
+}
     *{
     padding: 0;
     margin: 0;
@@ -54,6 +57,8 @@ form{
     justify-content: center;
     border-radius: 20px;
     background-color: rgb(163, 197, 255);
+    
+    
 }
 
 label,input{
@@ -63,25 +68,48 @@ label,input{
 }
 .btn{
     padding: 5px 75px !important;
-    background-color: rgb(255, 143, 121);
+    background-color: red;
+    color: white;
 }
+a{
+    color: blue;
+}
+.text-label {
+	color: #cdcdcd;
+	font-weight: bold;
+    
+}
+.page{
+    border-radius: 75px 75px;   
+}
+
+
+
 </style>
 </head>
 <body>
 
 <form action="log.php" method="POST">
+   
  <div class="page">
-    <label for="name">USER NAME</label>
+     <label for="name"><u><b>CUSTOMER LOG-IN</b></u></label>
     <br>
-    <input type="text" name="usrname">
+    <br>
+    <label for="name">Customer Id</label>
+    <br>
+    <input type="text" name="usrname" required placeholder="Enter Username" style="border-radius: 7px " >
     <br>
     <label for="pass">Password</label>
     <br>
-    <input type="text" name="pass">
+    <input type="text" name="pass"required placeholder="Enter Password">
     <br> 
     <input type="submit" class="btn" value="SignIn">
+    <br>
+    <br>
+    <a href="signup1.php">Dont have an account? <br>Click Here</a>
+ 
     </div> 
-
+   
 </form>
-<a href="signup.php">Dont have an account</a>
+
 

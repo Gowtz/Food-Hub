@@ -1,26 +1,19 @@
-<?php
+<?php 
 require('./database/db_connect.php');
-session_start();
 
-if (isset($_POST["usrname"],$_POST["pass"]))
+if (isset($_POST["name"],$_POST["usrname"],$_POST["pass"],$_POST["email"]))
 {
+    $name = $_POST['name'];
     $username=$_POST["usrname"];
-    $password=$_POST["pass"];
-    $sql = "SELECT uid FROM user WHERE usrname='$username' and pass = '$password'";
-    $result=mysqli_query($conn,$sql);
-    $count=mysqli_num_rows($result);
-    if($count==1) {
-        $_SESSION['login_admin']=$username;
-        header("Location: backend.php");
-    }else {
-        echo '<script language="javascript">';
-        echo 'alert("Invalid Username or Password")';
-        echo '</script>';
-    }
+    $pass=$_POST["pass"];
+    $email =$_POST['email'];
+
+    $sql = " insert into cust(cname,usrname,pass,email) values('$name','$username','$pass','$email')";
+    $result = mysqli_query($conn,$sql);
+
 }
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +27,7 @@ if (isset($_POST["usrname"],$_POST["pass"]))
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    text-align:center;
 }
 html{
     height: 100%;
@@ -43,7 +37,7 @@ html{
     justify-content: center;
 }
 form{
-    height: 300px;
+    height: 400px;
     width: 300px;
     display: flex;
     align-items: center;
@@ -61,13 +55,18 @@ label,input{
     padding: 5px 75px !important;
     background-color: rgb(255, 143, 121);
 }
+
 </style>
 </head>
 <body>
 
-<form action="admin.php" method="POST">
+<form action="signup1.php" method="POST">
  <div class="page">
-    <label for="name">Admin</label>
+    <label for="name">Name</label>
+    <br>
+    <input type="text" name="name">
+    <br>
+    <label for="usrname">USER NAME</label>
     <br>
     <input type="text" name="usrname">
     <br>
@@ -75,6 +74,14 @@ label,input{
     <br>
     <input type="text" name="pass">
     <br> 
+    <label for="email">Email</label>
+    <br>
+    <input type="email" name="email">
+    <br>
     <input type="submit" class="btn" value="SignIn">
     </div> 
+    
 </form>
+<a href="log.php">Already have a Acount? LogIn</a>
+</body>
+</html>

@@ -4,7 +4,7 @@
    
    $user_check = $_SESSION['login_user'];
 
-   $ses_sql = mysqli_query($conn,"select userid from admin_login where userid= '$user_check'");
+   $ses_sql = mysqli_query($conn,"select usrname from cust where usrname= '$user_check'");
    $name = $_SESSION['login_user'] ?? "Login";
 
    
