@@ -6,9 +6,9 @@ include('./template/header.php')
  <!-- header -->
  <header id="home" class="header">
       <div class="overlay text-white text-center">
-        <h1 class="display-2 font-weight-bold my-3">Center fresh &amp; Delightful</h1>
+        <h1 class="display-2 font-weight-bold my-3">Book Your Table Now!!</h1>
         <!-- <h2 class="display-4 mb-5">Center fresh &amp; Delightful</h2> -->
-        <a class="btn btn-lg btn-primary" href="#gallery">View Our gallery</a>
+        <a class="btn btn-lg btn-primary" href="#gallery">Our Restaurants</a>
       </div>
     </header>
 
@@ -208,11 +208,13 @@ include('./template/header.php')
                 />
                 <div class="card-body">
                   <h1 class="text-center mb-4">
-                    <a href="#" class="badge badge-primary">₹500</a>
+                    <a href="#" class="badge badge-primary">₹250</a>
                   </h1>
-                  <h4 class="pt20 pb20">Burger Plater</h4>
+                  <h4 class="pt20 pb20">Burger </h4>
                   <p class="text-white">
-                    Veg burger and Non Veg burgers
+                    Available at Truffles
+                    
+              
                   </p>
                 </div>
               </div>
@@ -220,7 +222,7 @@ include('./template/header.php')
             <div class="col-md-4">
               <div class="card bg-transparent border my-3 my-md-0">
                 <img
-                  src="assets/imgs/blog-2.jpg"
+                  src="assets/imgs/1.jpg"
                   alt="template by DevCRID http://www.devcrud.com/"
                   class="rounded-0 card-img-top mg-responsive"
                 />
@@ -228,9 +230,9 @@ include('./template/header.php')
                   <h1 class="text-center mb-4">
                     <a href="#" class="badge badge-primary">₹120</a>
                   </h1>
-                  <h4 class="pt20 pb20">Salad Plater</h4>
+                  <h4 class="pt20 pb20">Pasta</h4>
                   <p class="text-white">
-                    Grass and leaves
+                     Available at Polar Bear
                       <br>
                       
 
@@ -241,7 +243,7 @@ include('./template/header.php')
             <div class="col-md-4">
               <div class="card bg-transparent border my-3 my-md-0">
                 <img
-                  src="assets/imgs/blog-3.jpg"
+                  src="assets/imgs/3.jpg"
                   alt="template by DevCRID http://www.devcrud.com/"
                   class="rounded-0 card-img-top mg-responsive"
                 />
@@ -249,11 +251,9 @@ include('./template/header.php')
                   <h1 class="text-center mb-4">
                     <a href="#" class="badge badge-primary">₹80</a>
                   </h1>
-                  <h4 class="pt20 pb20">Buns</h4>
+                  <h4 class="pt20 pb20">Sulaimani Tea</h4>
                   <p class="text-white">
-                    Sweet Bun
-                    Aloo Bun
-                    Spicy Bun
+                  Available at Chai Kings
                   </p>
                 </div>
               </div>
@@ -302,7 +302,7 @@ include('./template/header.php')
                   </h1>
                   <h4 class="pt20 pb20">Raspberry Pomogrante Smoothie</h4>
                   <p class="text-white">
-                    healthy pomogrante with a twist of raspbery.                 </p>
+                    Healthy pomogrante with a twist of raspbery.                 </p>
                 </div>
               </div>
             </div>
@@ -338,7 +338,7 @@ include('./template/header.php')
       <div class="row mt-3 mb-5">
         <div class="col-md-4 my-3 my-md-0">
           <div class="testmonial-card">
-            <h3 class="testmonial-title">John Doe</h3>
+            <h3 class="testmonial-title">Elon Musk</h3>
             <h6 class="testmonial-subtitle">Web Designer</h6>
             <div class="testmonial-body">
               <p>
@@ -349,7 +349,7 @@ include('./template/header.php')
         </div>
         <div class="col-md-4 my-3 my-md-0">
           <div class="testmonial-card">
-            <h3 class="testmonial-title">Steve Thomas</h3>
+            <h3 class="testmonial-title">Steve Jobs</h3>
             <h6 class="testmonial-subtitle">UX/UI Designer</h6>
             <div class="testmonial-body">
               <p>
@@ -360,7 +360,7 @@ include('./template/header.php')
         </div>
         <div class="col-md-4 my-3 my-md-0">
           <div class="testmonial-card">
-            <h3 class="testmonial-title">Miranda Joy</h3>
+            <h3 class="testmonial-title">Jeff Bezos</h3>
             <h6 class="testmonial-subtitle">Graphic Designer</h6>
             <div class="testmonial-body">
               <p>
@@ -430,7 +430,7 @@ include('./template/header.php')
         <div class="col-md-6 px-5 has-height-lg middle-items">
           <h3>FIND US</h3>
           <div class="text-muted">
-            <p><span class="ti-location-pin pr-3"></span> Bangalore</p>
+            <p><span class="ti-location-pin pr-3"></span> Bengaluru</p>
             <p><span class="ti-support pr-3"></span>9876543215</p>
             <p><span class="ti-email pr-3"></span>mvjce@microsoft.com</p>
           </div>
@@ -439,7 +439,8 @@ include('./template/header.php')
     </div>
 
   
-    
+<!-- google maps -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>    
 <?php
 include('./template/footer.php')
 ?>

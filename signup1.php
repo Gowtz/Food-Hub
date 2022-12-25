@@ -29,6 +29,9 @@ if (isset($_POST["name"],$_POST["usrname"],$_POST["pass"],$_POST["email"]))
     font-family: sans-serif;
     text-align:center;
 }
+body{
+    background-color: #1E1E1E ;
+}
 html{
     height: 100%;
     width: 100%;
@@ -43,7 +46,7 @@ form{
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    background-color: rgb(163, 197, 255);
+    background-color: #686A6C;
 }
 
 label,input{
@@ -53,7 +56,11 @@ label,input{
 }
 .btn{
     padding: 5px 75px !important;
-    background-color: rgb(255, 143, 121);
+    background-color: red;
+    color:white;
+}
+a{
+    color: blue;
 }
 
 </style>
@@ -61,27 +68,31 @@ label,input{
 <body>
 
 <form action="signup1.php" method="POST">
- <div class="page">
+ <div class="page"><B>
     <label for="name">Name</label>
     <br>
-    <input type="text" name="name">
+    <input type="text" name="name" required placeholder="Enter Name">
     <br>
     <label for="usrname">USER NAME</label>
     <br>
-    <input type="text" name="usrname">
+    <input type="text" name="usrname"required placeholder="Enter Username">
     <br>
     <label for="pass">Password</label>
     <br>
-    <input type="text" name="pass">
+    <input type="text" name="pass"required placeholder="Enter Password">
     <br> 
     <label for="email">Email</label>
     <br>
-    <input type="email" name="email">
+    <input type="email" name="email"required placeholder="Enter Email">
     <br>
-    <input type="submit" class="btn" value="SignIn">
+    <input type="submit" class="btn" value="SignIn" style="font-weight:bold;border-radius:20px;" >
+    <br>
+    <br>
+    <a href="log.php"><b>Already have a Acount? LogIn</b></a>
+    </B>
     </div> 
     
 </form>
-<a href="log.php">Already have a Acount? LogIn</a>
+
 </body>
 </html>

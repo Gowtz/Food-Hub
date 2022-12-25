@@ -35,6 +35,9 @@ if (isset($_POST["usrname"],$_POST["pass"]))
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    background-color: #1E1E1E ;
+}
 html{
     height: 100%;
     width: 100%;
@@ -59,22 +62,25 @@ label,input{
 }
 .btn{
     padding: 5px 75px !important;
-    background-color: rgb(255, 143, 121);
+    background-color:red;
+    color:white;
 }
 </style>
 </head>
 <body>
 
 <form action="admin.php" method="POST">
- <div class="page">
+ <div class="page"><center>
+    <label for="name"><u><b>Admin LOG-IN</b></u></label><br><br>
     <label for="name">Admin</label>
     <br>
-    <input type="text" name="usrname">
+    <input type="text" name="usrname" required placeholder="Enter Admin">
     <br>
     <label for="pass">Password</label>
     <br>
-    <input type="text" name="pass">
+    <input type="text" name="pass"required placeholder="Enter Password">
     <br> 
-    <input type="submit" class="btn" value="SignIn">
-    </div> 
+    <input type="submit" class="btn" value="SignIn" style="border-radius:20px;">
+    </div>
+    </center> 
 </form>

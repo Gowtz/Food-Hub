@@ -10,7 +10,7 @@
     width: 20%;
     height: 100vh;
     position: fixed;
-    background-color: #6b97fe;
+    background-color: rgb(221, 64, 64);
     color: antiquewhite;
 }
 ul{
@@ -37,7 +37,7 @@ li{
     justify-content: center;
 }
 .side-bar a:hover{
-    background-color: #3471ff;
+    background-color: RED;
 }
 
 .Content{
@@ -54,13 +54,16 @@ li{
 .line{
     display: flex;align-items: center;justify-content: center;
 }
+body {
+    background-color: #686A6C ;
+}
 .card{
     border-radius: 10px;
     padding: 20px;
     margin: 20px;
     height: 100px;
     width: 170px;
-    background-color: rgb(153, 234, 152);
+    background-color: rgb(113, 207, 112);
     display: flex;
     align-items: center;
     justify-content: space-evenly;

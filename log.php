@@ -97,13 +97,13 @@ a{
     <br>
     <label for="name">Customer Id</label>
     <br>
-    <input type="text" name="usrname" required placeholder="Enter Username" style="border-radius: 7px " >
+    <input type="text" name="usrname" required placeholder="Enter Username;" style="border-radius 7px; " >
     <br>
     <label for="pass">Password</label>
     <br>
-    <input type="text" name="pass"required placeholder="Enter Password">
+    <input type="text" name="pass"required placeholder="Enter Password;">
     <br> 
-    <input type="submit" class="btn" value="SignIn">
+    <input type="submit" class="btn" value="SignIn" style="border-radius:20px;">
     <br>
     <br>
     <a href="signup1.php">Dont have an account? <br>Click Here</a>

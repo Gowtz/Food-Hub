@@ -13,11 +13,12 @@ if(isset($_GET['id'])){
     //O^v#6#cTqE2NmBFzvsae
 }
 ?>
+
 <div class="bg-light" >
 
    <div class="container d-flex justify-content-center py-5 mt-5">
     <div class="py-5 mt-5 text-dark text-center ">
-        <h1><?php echo $ssname ?></h1>
+        <h1><?php echo $ssname ?></h1><br><br>
         <h2>Available Foods</h2>
         
     </div>
@@ -32,24 +33,27 @@ if(isset($_GET['id'])){
   <p style="font-size:35px  " class="pt-2"><?php echo $data['fname'] ?></p>
 </div>      
  <?php }  ?> 
+ <br>
+ <br>
         
    </div>
    </div>
    </div>
    
 
-
+<br>
+<br>
 
    <div class="container text-center">
    <h2 class="py-5 "><u>Reserve Table</u></h2>
-   <table style="border:1px solid white;margin-left:auto;margin-right:auto;">
+   <table style="margin:0 auto; background:#4D555D;border-radius:12px;color:white;">
    <tr>
-   <td><form action="book.php" method="post">
-    <label for="">Date</label></td>
+   <td><form action="book.php" style="text-align:center;" method="post">
+    <label for=""style="color:white;">Date</label></td>
     <td><input type="date" name="date" id=""></td>
     </tr>
     <tr>
-    <td><label for="">Table For</label> </td>   
+    <td><label for=""style="color:white;">Table For</label> </td>   
     <td><?php
     $table_result=mysqli_query($conn,"SELECT `tname`, `tid` FROM `tabl`");
     echo '<select class= "select" name="table_name">';
@@ -64,7 +68,7 @@ if(isset($_GET['id'])){
     ?></td>
     </tr>
     <tr>
-   <td><input type="submit" name="boo" value="  Book Table  " style="border-radius: 7px " ></td>
+   <td><b><input type="submit" name="boo" value="  Book Table  " style="border:none;padding:10px;margin:0 auto;text-align:center; border-radius: 7px  ; background:red; color:white ;font-weight:bold" ></b></td>
    </tr>
    </table>   
     </form>
@@ -72,7 +76,8 @@ if(isset($_GET['id'])){
    <script>var nav = document.querySelector('nav');
        nav.classList.add('bg-dark');
    </script>
-
+<br>
+<br>
 </div>   
 </body>
 </html>

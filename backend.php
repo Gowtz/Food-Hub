@@ -76,20 +76,22 @@ $tdata=$tdatas[0];
     Add food
 <div class="connn">
 	<div class="Content"> 
-	    <h1 class="add">Add Foods</h1>
+	    
 	    <form action="./pages/food.php" class="feo" method="POST" enctype="multipart/form-data">
 	        <div class="page">
+			<h1 class="add">Add Foods</h1><BR></BR>
 	            <label for="fid">ID</label><br>
 	                <input type="number" name="id"><br>
 	                <label for="fname">Name</label><br>
 	                <input type="text" name="fname"><br>
 	                <br>
-					<label for="res_img">images</label>
+					<label for="res_img">Images</label>
 	<input type="file" name="food_img">
+	<br><br>
 <?php
 $class_result=mysqli_query($conn,"SELECT `sname`, `sid` FROM `store`");
 echo '<select class= "selec" name="store_name">';
-echo '<option selected disabled>Select Class</option>';
+echo '<option selected disabled>Select Store</option>';
 while($row = mysqli_fetch_array($class_result)){
 	// print_r($row);
 	$display=$row['sname'];
@@ -107,17 +109,18 @@ while($row = mysqli_fetch_array($class_result)){
 
 
     <div class="content">
-        <h1 style="text-align:center;">Add store</h1>
+        
     <form action="./pages/store.php" class="feo" method="POST" enctype="multipart/form-data">
     <div class="page">
+	<h1 style="text-align:center;">Add store</h1><br><br>
     <label for="sid">store id</label><br>
     <input type="number" name="sid"><br>
     <label for="sname">Store Name</label><br>
     <input type="text" name="sname"><br>
     <label for="address">address</label><br>
     <input type="text" name="address"><br>
-	<label for="res_img">images</label>
-	<input type="file" name="res_img">
+	<label for="res_img">Images</label>
+	   <input type="file" name="res_img">
     <input class="sub" type="submit" value="Submit">
     </div>
 </form>   

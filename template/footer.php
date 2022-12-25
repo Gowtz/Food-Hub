@@ -27,7 +27,7 @@
         Made with <i class="ti-heart ">
 
         </i> By
-        <a href="http://devcrud.com">TVS Gaint</a>
+        <a href="http://devcrud.com">US</a>
       </p>
     </div>
     
