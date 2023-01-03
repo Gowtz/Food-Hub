@@ -18,7 +18,7 @@ require('./database/db_connect.php')
 </div>
 <div class="gallary row">
             <?php foreach($datas as $data){?>
-                <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
 
         <img
           src="./img/<?php echo $data['img'] ?>"

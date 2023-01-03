@@ -82,3 +82,7 @@ if(isset($_GET['id'])){
 </body>
 </html>
 
+
+<?php 
+include('./template/footer.php');
+?>

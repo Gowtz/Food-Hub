@@ -1,5 +1,5 @@
-<?php 
-session_start();
+<?php
+include('./database/ss.php');
 $name = $_SESSION['login_user'] ?? "Login";
 ?>
 <!DOCTYPE html>
