@@ -32,9 +32,12 @@ body {
   }
 
   require('./database/db_connect.php');
+  // Check table 
+
 
   if(isset($_POST['boo'])){
     $date=$_POST['date'];
+   echo $date;
     if(!isset($_POST['table_name'])){
       $table_name=null;
       }
