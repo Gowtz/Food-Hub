@@ -1,8 +1,6 @@
 <?php
 include('./template/header.php')
 ?>
-
-
  <!-- header -->
  <header id="home" class="header">
       <div class="overlay text-white text-center">
@@ -11,146 +9,13 @@ include('./template/header.php')
         <a class="btn btn-lg btn-primary" href="#gallery">Our Restaurants</a>
       </div>
     </header>
-
     <!--  About Section  -->
     
 
     <!--  gallary Section  -->
-    
-  <!-- <div id="gallery"class="text-center bg-dark text-light has-height-md middle-items wow fadeIn">
-      <h2 class="section-title">Our Restaurants</h2>
-  </div> -->
-
   <?php 
   require('./pages/restaurant.php')
   ?>
-
-<!-- 
-    <div class="gallary row">
-
-      <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-        <img
-          src="assets/imgs/gallary-2.jpg"
-          alt="template by DevCRID http://www.devcrud.com/"
-          class="gallary-img"
-        />
-        <a href="'./pages/restaurant.php'" class="gallary-overlay">
-          <i class="gallary-icon ">Chai Kings</i>
-
-        </a>
-      </div>
-      <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-        <img
-          src="assets/imgs/gallary-3.jpg"
-          alt="template by DevCRID http://www.devcrud.com/"
-          class="gallary-img"
-        />
-        <a href="#" class="gallary-overlay">
-          <i class="gallary-icon ">Cafe Coffee Day</i>
-        </a>
-      </div>
-      <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-        <img
-          src="assets/imgs/gallary-4.jpg"
-          alt="template by DevCRID http://www.devcrud.com/"
-          class="gallary-img"
-        />
-        <a href="#" class="gallary-overlay">
-          <i class="gallary-icon ">Dabba canteen</i>
-        </a>
-      </div>
-      <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-        <img
-          src="assets/imgs/gallary-5.jpg"
-          alt="template by DevCRID http://www.devcrud.com/"
-          class="gallary-img"
-        />
-        <a href="#" class="gallary-overlay">
-          <i class="gallary-icon">Vaggi</i>
-        </a>
-      </div>
-      <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-        <img
-          src="assets/imgs/gallary-6.jpg"
-          alt="template by DevCRID http://www.devcrud.com/"
-          class="gallary-img"
-        />
-        <a href="#" class="gallary-overlay">
-          <i class="gallary-icon ">Thot</i>
-        </a>
-      </div>
-      <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-        <img
-          src="assets/imgs/gallary-7.jpg"
-          alt="template by DevCRID http://www.devcrud.com/"
-          class="gallary-img"
-        />
-        <a href="#" class="gallary-overlay">
-          <i class="gallary-icon">`</i>
-        </a>
-      </div>
-      <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-        <img
-          src="assets/imgs/gallary-8.jpg"
-          alt="template by DevCRID http://www.devcrud.com/"
-          class="gallary-img"
-        />
-        <a href="#" class="gallary-overlay">
-          <i class="gallary-icon ti-plus"></i>
-        </a>
-      </div>
-      
-    </div> -->
-
-    <!-- book a table Section 
-    <div
-      class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items"
-      id="book-table"
-    >
-      <div class="">
-        <h2 class="section-title mb-5">BOOK A TABLE</h2>
-        <div class="row mb-5">
-          <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-            <input
-              type="email"
-              id="booktable"
-              class="form-control form-control-lg custom-form-control"
-              placeholder="EMAIL"
-            />
-          </div>
-          <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-            <input
-              type="number"
-              id="booktable"
-              class="form-control form-control-lg custom-form-control"
-              placeholder="NUMBER OF GUESTS"
-              max="20"
-              min="0"
-            />
-          </div>
-          <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-            <input
-              type="time"
-              id="booktable"
-              class="form-control form-control-lg custom-form-control"
-              placeholder="EMAIL"
-            />
-          </div>
-          <div class="col-sm-6 col-md-3 col-xs-12 my-2">
-            <input
-              type="date"
-              id="booktable"
-              class="form-control form-control-lg custom-form-control"
-              placeholder="12/12/12"
-            />
-          </div>
-        </div>
-        <a href="#" class="btn btn-lg btn-primary" id="rounded-btn"
-          >FIND TABLE</a
-        >
-      </div>
-    </div> -->
-
     <!-- BLOG Section  -->
     <div
       id="blog"
@@ -234,8 +99,6 @@ include('./template/header.php')
                   <p class="text-white">
                      Available at Polar Bear
                       <br>
-                      
-
                   </p>
                 </div>
               </div>
@@ -282,9 +145,6 @@ include('./template/header.php')
                   <p class="text-white">
                     Fresh and refreshing limes and chilled soda.
                     <br>
-                    
-                    
-
                   </p>
                 </div>
               </div>
@@ -328,7 +188,6 @@ include('./template/header.php')
         </div>
       </div>
     </div>
-
     <!-- REVIEWS Section  -->
     <div
       id="testmonial"
@@ -403,18 +262,13 @@ include('./template/header.php')
                   <td>1MJ20CS221</td>
                 </tr>
               </table>
-                 
-                 
-
             </p>
-            
           </div>
         </div>
       </div>
     </div>
   </div>
   <br>
-
     <!-- CONTACT Section  -->
     <div
       id="contact"
